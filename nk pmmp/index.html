@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN" id="bgimg">
+<head>
+<body style="overflow:scroll;overflow-y:hidden;overflow-x:hidden">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width" />
+<title>Nukkit/PocketMine-MP</title>
+<meta name="description" content="网页引导页">
+<meta name="keywords" content="网页引导页">
+<link rel="icon" href="" mce_href="/dir/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="./src/buttons.css">
+<link rel="stylesheet" type="text/css" href="./src/showcase.css">
+<link type="text/css" rel="stylesheet" href="style.css" />
+<meta name="referrer" content="no-referrer" />
+<div style="text-align:center;clear:both">
+</div>
+<div class="tooltips">
+<span>
+<iframe src="https://music.163.com/outchain/player?type=0&id=3052064923&auto=1&height=280" width=330 height="300" frameborder="no" marginwidth="0" marginheight="0"></iframe>
+</span>
+</div>
+</head>
+<body>
+<div id="top">
+<main id="top_main">
+<div id="top_logo"><img src="src/tx2.png" onmouseover="mouseOver()" onmouseout="mouseOut()" id="mainimg"></div>
+<div id="top_title"><img id="top_title01" alt="" src="src/toptitle01.png">
+<br class="top_hr_style01">
+</div><br><br>
+<div class="showcase-examples l-over l-center">
+  <a href="https://www.lanzoux.com/iICeCdfadgh" title="Nukkit" class="button button-rounded button-plain button-small-caps button-border" target="_blank">Nukkit</a>
+  <a href="https://www.lanzoux.com/iC3HKdfadef" title="PocketMine-MP" class="button button-rounded button-plain button-small-caps button-border" target="_blank">PocketMine-MP</a>
+  </div>
+</main>
+</div>
+<footer id="top_footer">
+<span id="top_copyright">
+<a href="https://www.anyeshequ.com/">棉狗</a>©2020版权所有<a href=""></a>
+</span>
+</footer>
+</body>
+<script>
+	function mouseOver(){
+		document.getElementById("mainimg").src="src/tx.png";//鼠标悬浮时的旋转图标
+	}
+	function mouseOut()
+	{
+		document.getElementById('mainimg').src ="src/tx2.png"//默认的旋转图标
+	}
+</script>
+<script type="text/javascript">
+	function change(){
+		var bodyBgs = [];
+bodyBgs[1] = "./img/1.jpg";
+bodyBgs[2] = "./img/1.jpg";
+bodyBgs[3] = "./img/1.jpg";
+bodyBgs[4] = "./img/2.jpg";
+bodyBgs[5] = "./img/2.jpg";
+bodyBgs[6] = "./img/2.jpg";
+bodyBgs[7] = "./img/3.jpg";
+bodyBgs[8] = "./img/3.jpg";
+bodyBgs[9] = "./img/3.jpg";
+bodyBgs[10] = "./img/4.jpg";
+bodyBgs[11] = "./img/4.jpg";
+bodyBgs[12] = "./img/4.jpg";
+		var randomBgIndex = Math.round( Math.random() * 12 );
+		var img1= document.getElementById('bgimg');
+		img1.style.backgroundImage='url(' + bodyBgs[randomBgIndex] + ')';
+	        window.setTimeout(function(){change()},10000);
+	}
+	change();
+</script>
+<script type="text/javascript" src="src/snow.min.js"></script>        
+<script type="text/javascript">
+createSnow('src/', 60);
+</script>
+</html>
