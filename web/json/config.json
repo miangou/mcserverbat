@@ -1,0 +1,10 @@
+{
+   "username": "Name",
+   "password": "Password",
+   "name": "Your Servername",
+   "type": "KVM",
+   "host": "None",
+   "location": "洛杉矶",
+   "disabled": false ,
+   "region": "US"
+  },
